@@ -32,10 +32,10 @@ export const USBC = (props: ChipProps<typeof pinLabels>) => {
       footprint={<footprint>
         <hole pcbX="-2.889885mm" pcbY="1.05492555mm" diameter="0.700024mm" />
 <hole pcbX="2.890139mm" pcbY="1.05492555mm" diameter="0.700024mm" />
-<platedhole  portHints={["pin13"]} pcbX="-4.324985mm" pcbY="1.57511755mm" holeWidth="0.5999988mm" holeHeight="1.499997mm" outerWidth="1.0999978mm" outerHeight="1.999996mm" shape="pill" />
-<platedhole  portHints={["pin14"]} pcbX="4.324985mm" pcbY="1.57511755mm" holeWidth="0.5999988mm" holeHeight="1.499997mm" outerWidth="1.0999978mm" outerHeight="1.999996mm" shape="pill" />
-<platedhole  portHints={["pin15"]} pcbX="-4.324985mm" pcbY="-2.62502645mm" holeWidth="0.5999988mm" holeHeight="1.1999976mm" outerWidth="1.1999976mm" outerHeight="1.7999964mm" shape="pill" />
-<platedhole  portHints={["pin16"]} pcbX="4.324985mm" pcbY="-2.62502645mm" holeWidth="0.5999988mm" holeHeight="1.1999976mm" outerWidth="1.1999976mm" outerHeight="1.7999964mm" shape="pill" />
+<platedhole pcbRotation={90} portHints={["pin13"]} pcbX="-4.324985mm" pcbY="1.57511755mm" holeWidth="0.5999988mm" holeHeight="1.499997mm" outerWidth="1.0999978mm" outerHeight="1.999996mm" shape="pill" />
+<platedhole pcbRotation={90} portHints={["pin14"]} pcbX="4.324985mm" pcbY="1.57511755mm" holeWidth="0.5999988mm" holeHeight="1.499997mm" outerWidth="1.0999978mm" outerHeight="1.999996mm" shape="pill" />
+<platedhole pcbRotation={90} portHints={["pin15"]} pcbX="-4.324985mm" pcbY="-2.62502645mm" holeWidth="0.5999988mm" holeHeight="1.1999976mm" outerWidth="1.1999976mm" outerHeight="1.7999964mm" shape="pill" />
+<platedhole pcbRotation={90} portHints={["pin16"]} pcbX="4.324985mm" pcbY="-2.62502645mm" holeWidth="0.5999988mm" holeHeight="1.1999976mm" outerWidth="1.1999976mm" outerHeight="1.7999964mm" shape="pill" />
 <smtpad portHints={["pin1"]} pcbX="-3.200019mm" pcbY="2.12502755mm" width="0.5500116mm" height="1.0999978mm" shape="rect" />
 <smtpad portHints={["pin2"]} pcbX="-2.399919mm" pcbY="2.12502755mm" width="0.5500116mm" height="1.0999978mm" shape="rect" />
 <smtpad portHints={["pin3"]} pcbX="-1.749933mm" pcbY="2.12502755mm" width="0.2999994mm" height="1.0999978mm" shape="rect" />
