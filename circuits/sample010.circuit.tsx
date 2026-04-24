@@ -18,7 +18,7 @@ export default () => (
       platedDiameter="0.95mm"
       doNotPlace
       showSilkscreenPinLabels
-      pcbX={-9.6}
+      pcbX={-14.6}
       pcbY={-3.4}
       pcbRotation={270}
       pinLabels={[
