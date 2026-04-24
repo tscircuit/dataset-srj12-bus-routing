@@ -2,7 +2,7 @@
   "name": "@tsci/tscircuit.dataset-srj12-bus-routing",
   "version": "1.0.0",
   "description": "A tscircuit component package",
-  "main": "circuits/sample001.circuit.tsx",
+  "main": "circuits/sample001/sample001.circuit.tsx",
   "keywords": [
     "tscircuit",
     "circuit",
@@ -10,10 +10,10 @@
     "electronics"
   ],
   "scripts": {
-    "build": "tsci build circuits/sample001.circuit.tsx",
-    "build:all": "tsci build circuits/sample001.circuit.tsx && tsci build circuits/sample002.circuit.tsx && tsci build circuits/sample003.circuit.tsx && tsci build circuits/sample004.circuit.tsx && tsci build circuits/sample005.circuit.tsx && tsci build circuits/sample006.circuit.tsx && tsci build circuits/sample007.circuit.tsx && tsci build circuits/sample008.circuit.tsx && tsci build circuits/sample009.circuit.tsx && tsci build circuits/sample010.circuit.tsx",
-    "snapshot": "tsci snapshot circuits/sample001.circuit.tsx",
-    "snapshot:update": "tsci snapshot circuits/sample001.circuit.tsx --update",
+    "build": "tsci build circuits/sample001/sample001.circuit.tsx",
+    "build:all": "tsci build circuits/sample001/sample001.circuit.tsx && tsci build circuits/sample002/sample002.circuit.tsx && tsci build circuits/sample003/sample003.circuit.tsx && tsci build circuits/sample004/sample004.circuit.tsx && tsci build circuits/sample005/sample005.circuit.tsx && tsci build circuits/sample006/sample006.circuit.tsx && tsci build circuits/sample007/sample007.circuit.tsx && tsci build circuits/sample008/sample008.circuit.tsx && tsci build circuits/sample009/sample009.circuit.tsx && tsci build circuits/sample010/sample010.circuit.tsx",
+    "snapshot": "tsci snapshot circuits/sample001/sample001.circuit.tsx",
+    "snapshot:update": "tsci snapshot circuits/sample001/sample001.circuit.tsx --update",
     "start": "tsci dev",
     "typecheck": "tsc --noEmit",
     "dev": "tsci dev"
