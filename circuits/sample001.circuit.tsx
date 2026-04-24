@@ -38,16 +38,8 @@ export default () => (
 
     <USBC name="USBC1" pcbRotation={90} pcbX={11} pcbY={0} />
 
-    <trace from=".U1 > .pin17" to=".USBC1 > .pin7" />
-    <trace from=".U1 > .pin18" to=".USBC1 > .pin3" />
-    <trace from=".U1 > .pin19" to=".USBC1 > .pin10" />
-    <trace from=".U1 > .pin20" to=".USBC1 > .pin1" />
-    <trace from=".U1 > .pin21" to=".USBC1 > .pin9" />
-    <trace from=".U1 > .pin22" to=".USBC1 > .pin5" />
-    <trace from=".U1 > .pin23" to=".USBC1 > .pin12" />
-    <trace from=".U1 > .pin24" to=".USBC1 > .pin2" />
-    <trace from=".U1 > .pin25" to=".USBC1 > .pin8" />
-    <trace from=".U1 > .pin16" to=".USBC1 > .pin4" />
-    <trace from=".U1 > .pin27" to=".USBC1 > .pin11" />
+    <trace from=".USBC1 > .DP1" to=".U1 > .pin25" />
+    <trace from=".USBC1 > .DP2" to=".U1 > .pin26" />
+
   </board>
 )

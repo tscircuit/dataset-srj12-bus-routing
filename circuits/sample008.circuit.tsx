@@ -20,7 +20,7 @@ export default () => (
       showSilkscreenPinLabels
       pcbX={-10.5}
       pcbY={7.2}
-      pcbRotation={90}
+      pcbRotation={270}
       pinLabels={[
         "D2_POS",
         "D2_SHIELD",
@@ -44,14 +44,14 @@ export default () => (
       ]}
     />
 
-    <resistor pcbRotation={90} name="R1" resistance="33" footprint="0402" doNotPlace pcbX={-2.6} pcbY={11.4} />
-    <capacitor pcbRotation={90} name="C1" capacitance="100nF" footprint="0402" doNotPlace pcbX={2.2} pcbY={9.5} />
+    <resistor pcbRotation={90} name="R1" resistance="33" footprint="0402" doNotPlace pcbX={-4} pcbY={0} />
+    <capacitor pcbRotation={90} name="C1" capacitance="100nF" footprint="0402" doNotPlace pcbX={-4} pcbY={4} />
     <resistor pcbRotation={90} name="R2" resistance="51" footprint="0603" doNotPlace pcbX={-0.9} pcbY={5.4} />
-    <capacitor pcbRotation={90} name="C2" capacitance="1uF" footprint="0603" doNotPlace pcbX={4.3} pcbY={2.7} />
+    <capacitor pcbRotation={90} name="C2" capacitance="1uF" footprint="0603" doNotPlace pcbX={-6} pcbY={-4} />
     <resistor pcbRotation={90} name="R3" resistance="4.7k" footprint="0603" doNotPlace pcbX={2.4} pcbY={-0.9} />
     <capacitor pcbRotation={90} name="C3" capacitance="22nF" footprint="0402" doNotPlace pcbX={1.4} pcbY={-5.8} />
-    <resistor pcbRotation={90} name="R4" resistance="10k" footprint="0603" doNotPlace pcbX={-2.2} pcbY={-10.4} />
-    <capacitor pcbRotation={90} name="C4" capacitance="4.7uF" footprint="0805" doNotPlace pcbX={4.8} pcbY={-11.2} />
+    <resistor pcbRotation={90} name="R4" resistance="10k" footprint="0603" doNotPlace pcbX={-2.2} pcbY={-9.4} />
+    <capacitor pcbRotation={90} name="C4" capacitance="4.7uF" footprint="0805" doNotPlace pcbX={0} pcbY={-14.2} />
 
     <trace from=".HDMI1 > .pin1" to=".J1 > .pin1" />
     <trace from=".HDMI1 > .pin2" to=".J1 > .pin2" />

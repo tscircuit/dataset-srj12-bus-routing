@@ -19,8 +19,8 @@ export default () => (
       doNotPlace
       showSilkscreenPinLabels
       pcbX={-3.4}
-      pcbY={-13.6}
-      pcbRotation={180}
+      pcbY={-18.6}
+      pcbRotation={0}
       pinLabels={[
         "D2_POS",
         "D2_SHIELD",
@@ -44,12 +44,12 @@ export default () => (
       ]}
     />
 
-    <capacitor name="C1" capacitance="100nF" footprint="0402" doNotPlace pcbX={-10.8} pcbY={4.8} />
-    <resistor name="R1" resistance="33" footprint="0402" doNotPlace pcbX={-6.5} pcbY={3.1} />
-    <capacitor name="C2" capacitance="470nF" footprint="0603" doNotPlace pcbX={0.6} pcbY={4.6} />
-    <resistor name="R2" resistance="33" footprint="0603" doNotPlace pcbX={4.6} pcbY={1.3} />
+    <capacitor name="C1" capacitance="100nF" footprint="0402" doNotPlace pcbX={-10.8} pcbY={-12} />
+    <resistor name="R1" resistance="33" footprint="0402" doNotPlace pcbX={-6.5} pcbY={-13} />
+    <capacitor name="C2" pcbRotation={90} capacitance="470nF" footprint="0603" doNotPlace pcbX={0.6} pcbY={4.6} />
+    <resistor name="R2" resistance="33" footprint="0603" doNotPlace pcbX={-2} pcbY={-8} />
     <capacitor name="C3" capacitance="2.2uF" footprint="0805" doNotPlace pcbX={-1.9} pcbY={-2.6} />
-    <resistor name="R3" resistance="1k" footprint="0402" doNotPlace pcbX={3.0} pcbY={-3.9} />
+    <resistor name="R3" resistance="1k" footprint="0402" doNotPlace pcbX={2.0} pcbY={-3.9} />
     <capacitor name="C4" capacitance="10nF" footprint="0402" doNotPlace pcbX={-7.5} pcbY={-8.8} />
     <resistor name="R4" resistance="22k" footprint="0603" doNotPlace pcbX={2.8} pcbY={-10.4} />
     <capacitor name="C5" capacitance="4.7uF" footprint="0805" doNotPlace pcbX={-9.1} pcbY={-5.6} />
