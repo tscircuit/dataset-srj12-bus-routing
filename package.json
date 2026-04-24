@@ -1,5 +1,5 @@
 {
-  "name": "@tsci/imrishabh18.dataset-srj12-bus-routing",
+  "name": "@tsci/tscircuit.dataset-srj12-bus-routing",
   "version": "1.0.0",
   "description": "A tscircuit component package",
   "main": "circuits/sample001.circuit.tsx",
@@ -14,11 +14,13 @@
     "build:all": "tsci build circuits/sample001.circuit.tsx && tsci build circuits/sample002.circuit.tsx && tsci build circuits/sample003.circuit.tsx && tsci build circuits/sample004.circuit.tsx && tsci build circuits/sample005.circuit.tsx && tsci build circuits/sample006.circuit.tsx && tsci build circuits/sample007.circuit.tsx && tsci build circuits/sample008.circuit.tsx && tsci build circuits/sample009.circuit.tsx && tsci build circuits/sample010.circuit.tsx",
     "snapshot": "tsci snapshot circuits/sample001.circuit.tsx",
     "snapshot:update": "tsci snapshot circuits/sample001.circuit.tsx --update",
-    "start": "tsci dev circuits/sample001.circuit.tsx",
-    "typecheck": "tsc --noEmit"
+    "start": "tsci dev",
+    "typecheck": "tsc --noEmit",
+    "dev": "tsci dev"
   },
   "devDependencies": {
-    "tscircuit": "latest",
+    "@types/react": "^19.2.14",
+    "tscircuit": "^0.0.1670",
     "typescript": "^5.0.0"
   },
   "author": "imrishabh18"
