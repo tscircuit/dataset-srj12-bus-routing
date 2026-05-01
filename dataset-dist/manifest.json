@@ -1,0 +1,573 @@
+{
+  "generatedBy": {
+    "pipeline": "AutoroutingPipelineSolver4_TinyHypergraph",
+    "phase": "portPointPathingSolver",
+    "autorouterPackage": "@tscircuit/capacity-autorouter",
+    "autorouterVersion": "0.0.484"
+  },
+  "cases": [
+    {
+      "sampleName": "sample001",
+      "sourceFile": "circuits/sample001/sample001.circuit.simple-route.json",
+      "outputFile": "dataset-dist/sample001.tiny-hypergraph.json",
+      "stats": {
+        "sectionSearchGeneratedCandidateCount": 0,
+        "sectionSearchCandidateCount": 0,
+        "sectionSearchDuplicateCandidateCount": 0,
+        "sectionSearchBaselineMaxRegionCost": 0,
+        "sectionSearchFinalMaxRegionCost": 0,
+        "sectionSearchDelta": 0,
+        "selectedSectionCandidateLabel": null,
+        "selectedSectionCandidateFamily": null,
+        "sectionSearchMs": 0.6244999999999976,
+        "sectionSearchBaselineEvaluationMs": 0.5724579999999975,
+        "sectionSearchCandidateEligibilityMs": 0,
+        "sectionSearchCandidateInitMs": 0,
+        "sectionSearchCandidateSolveMs": 0,
+        "sectionSearchCandidateReplayScoreMs": 0,
+        "sectionMaskPortCount": 0,
+        "activeRouteCount": 0,
+        "initialMaxRegionCost": 0,
+        "finalMaxRegionCost": 0,
+        "optimized": false,
+        "currentStage": "none",
+        "stageStats": {
+          "solveGraph": {
+            "timeSpent": 1.6165419999999955,
+            "iterations": 0,
+            "completed": true
+          },
+          "optimizeSection": {
+            "timeSpent": 0.15637499999999704,
+            "iterations": 0,
+            "completed": true
+          }
+        }
+      },
+      "resultSummary": {
+        "solved": true,
+        "failed": false,
+        "error": null,
+        "iterations": 14,
+        "timeToSolve": null,
+        "pipelineIterations": 1339,
+        "nextPipelinePhase": "uniformPortDistributionSolver",
+        "regionCount": 161,
+        "portCount": 1307,
+        "connectionCount": 2,
+        "outputNodeCount": 7,
+        "inputNodeCount": 161
+      }
+    },
+    {
+      "sampleName": "sample002",
+      "sourceFile": "circuits/sample002/sample002.circuit.simple-route.json",
+      "outputFile": "dataset-dist/sample002.tiny-hypergraph.json",
+      "stats": {
+        "sectionSearchGeneratedCandidateCount": 0,
+        "sectionSearchCandidateCount": 0,
+        "sectionSearchDuplicateCandidateCount": 0,
+        "sectionSearchBaselineMaxRegionCost": 0,
+        "sectionSearchFinalMaxRegionCost": 0,
+        "sectionSearchDelta": 0,
+        "selectedSectionCandidateLabel": null,
+        "selectedSectionCandidateFamily": null,
+        "sectionSearchMs": 0.16162499999998658,
+        "sectionSearchBaselineEvaluationMs": 0.1460830000000044,
+        "sectionSearchCandidateEligibilityMs": 0,
+        "sectionSearchCandidateInitMs": 0,
+        "sectionSearchCandidateSolveMs": 0,
+        "sectionSearchCandidateReplayScoreMs": 0,
+        "sectionMaskPortCount": 0,
+        "activeRouteCount": 0,
+        "initialMaxRegionCost": 0,
+        "finalMaxRegionCost": 0,
+        "optimized": false,
+        "currentStage": "none",
+        "stageStats": {
+          "solveGraph": {
+            "timeSpent": 0.48758399999999824,
+            "iterations": 0,
+            "completed": true
+          },
+          "optimizeSection": {
+            "timeSpent": 0.058958000000018274,
+            "iterations": 0,
+            "completed": true
+          }
+        }
+      },
+      "resultSummary": {
+        "solved": true,
+        "failed": false,
+        "error": null,
+        "iterations": 18,
+        "timeToSolve": null,
+        "pipelineIterations": 1458,
+        "nextPipelinePhase": "uniformPortDistributionSolver",
+        "regionCount": 180,
+        "portCount": 1572,
+        "connectionCount": 2,
+        "outputNodeCount": 11,
+        "inputNodeCount": 180
+      }
+    },
+    {
+      "sampleName": "sample003",
+      "sourceFile": "circuits/sample003/sample003.circuit.simple-route.json",
+      "outputFile": "dataset-dist/sample003.tiny-hypergraph.json",
+      "stats": {
+        "sectionSearchGeneratedCandidateCount": 10,
+        "sectionSearchCandidateCount": 9,
+        "sectionSearchDuplicateCandidateCount": 0,
+        "sectionSearchBaselineMaxRegionCost": 0.013577453007400667,
+        "sectionSearchFinalMaxRegionCost": 0.002366641622839969,
+        "sectionSearchDelta": 0.011210811384560697,
+        "selectedSectionCandidateLabel": "hot-12-onehop-touch",
+        "selectedSectionCandidateFamily": "onehop-touch",
+        "sectionSearchMs": 13.491332999999997,
+        "sectionSearchBaselineEvaluationMs": 0.21429200000000037,
+        "sectionSearchCandidateEligibilityMs": 0.13978899999995065,
+        "sectionSearchCandidateInitMs": 1.2487490000000037,
+        "sectionSearchCandidateSolveMs": 6.291582999999974,
+        "sectionSearchCandidateReplayScoreMs": 4.0156240000000025,
+        "sectionMaskPortCount": 276,
+        "sectionBaselineMaxRegionCost": 0.013577453007400667,
+        "sectionBaselineTotalRegionCost": 0.013577453007400667,
+        "effectiveRipThresholdStart": 0.05,
+        "effectiveRipThresholdEnd": 0.05,
+        "effectiveMaxRips": 20,
+        "activeRouteCount": 2,
+        "currentRipThreshold": 0.05,
+        "hotRegionCount": 0,
+        "maxRegionCost": 0.002366641622839969,
+        "totalRegionCost": 0.004660387389911503,
+        "bestMaxRegionCost": 0.002366641622839969,
+        "bestTotalRegionCost": 0.004660387389911503,
+        "ripCount": 0,
+        "initialMaxRegionCost": 0.013577453007400667,
+        "initialTotalRegionCost": 0.015944094630240636,
+        "candidateMaxRegionCost": 0.002366641622839969,
+        "candidateTotalRegionCost": 0.004660387389911503,
+        "finalMaxRegionCost": 0.002366641622839969,
+        "finalTotalRegionCost": 0.004660387389911503,
+        "optimized": true,
+        "currentStage": "none",
+        "stageStats": {
+          "solveGraph": {
+            "timeSpent": 0.5629169999999988,
+            "iterations": 0,
+            "completed": true
+          },
+          "optimizeSection": {
+            "timeSpent": 0.5391250000000127,
+            "iterations": 0,
+            "completed": true
+          }
+        }
+      },
+      "resultSummary": {
+        "solved": true,
+        "failed": false,
+        "error": null,
+        "iterations": 51,
+        "timeToSolve": null,
+        "pipelineIterations": 1575,
+        "nextPipelinePhase": "uniformPortDistributionSolver",
+        "regionCount": 170,
+        "portCount": 1617,
+        "connectionCount": 2,
+        "outputNodeCount": 17,
+        "inputNodeCount": 170
+      }
+    },
+    {
+      "sampleName": "sample004",
+      "sourceFile": "circuits/sample004/sample004.circuit.simple-route.json",
+      "outputFile": "dataset-dist/sample004.tiny-hypergraph.json",
+      "stats": {
+        "sectionSearchGeneratedCandidateCount": 10,
+        "sectionSearchCandidateCount": 9,
+        "sectionSearchDuplicateCandidateCount": 1,
+        "sectionSearchBaselineMaxRegionCost": 0.014814814814814814,
+        "sectionSearchFinalMaxRegionCost": 0.014814814814814814,
+        "sectionSearchDelta": 0,
+        "selectedSectionCandidateLabel": null,
+        "selectedSectionCandidateFamily": null,
+        "sectionSearchMs": 6.539875000000023,
+        "sectionSearchBaselineEvaluationMs": 0.13345899999998778,
+        "sectionSearchCandidateEligibilityMs": 0.07237300000005575,
+        "sectionSearchCandidateInitMs": 0.5825420000000179,
+        "sectionSearchCandidateSolveMs": 5.151042000000018,
+        "sectionSearchCandidateReplayScoreMs": 0,
+        "sectionMaskPortCount": 0,
+        "activeRouteCount": 0,
+        "initialMaxRegionCost": 0.014814814814814814,
+        "finalMaxRegionCost": 0.014814814814814814,
+        "optimized": false,
+        "currentStage": "none",
+        "stageStats": {
+          "solveGraph": {
+            "timeSpent": 0.5440419999999904,
+            "iterations": 0,
+            "completed": true
+          },
+          "optimizeSection": {
+            "timeSpent": 0.03520800000001145,
+            "iterations": 0,
+            "completed": true
+          }
+        }
+      },
+      "resultSummary": {
+        "solved": true,
+        "failed": false,
+        "error": null,
+        "iterations": 43,
+        "timeToSolve": null,
+        "pipelineIterations": 1581,
+        "nextPipelinePhase": "uniformPortDistributionSolver",
+        "regionCount": 183,
+        "portCount": 1596,
+        "connectionCount": 2,
+        "outputNodeCount": 13,
+        "inputNodeCount": 183
+      }
+    },
+    {
+      "sampleName": "sample005",
+      "sourceFile": "circuits/sample005/sample005.circuit.simple-route.json",
+      "outputFile": "dataset-dist/sample005.tiny-hypergraph.json",
+      "stats": {
+        "sectionSearchGeneratedCandidateCount": 10,
+        "sectionSearchCandidateCount": 10,
+        "sectionSearchDuplicateCandidateCount": 0,
+        "sectionSearchBaselineMaxRegionCost": 0.009922417313189056,
+        "sectionSearchFinalMaxRegionCost": 0.009922417313189056,
+        "sectionSearchDelta": 0,
+        "selectedSectionCandidateLabel": null,
+        "selectedSectionCandidateFamily": null,
+        "sectionSearchMs": 5.126375000000024,
+        "sectionSearchBaselineEvaluationMs": 0.13545799999999986,
+        "sectionSearchCandidateEligibilityMs": 0.061374000000000706,
+        "sectionSearchCandidateInitMs": 0.679665,
+        "sectionSearchCandidateSolveMs": 3.770957999999979,
+        "sectionSearchCandidateReplayScoreMs": 0,
+        "sectionMaskPortCount": 0,
+        "activeRouteCount": 0,
+        "initialMaxRegionCost": 0.009922417313189056,
+        "finalMaxRegionCost": 0.009922417313189056,
+        "optimized": false,
+        "currentStage": "none",
+        "stageStats": {
+          "solveGraph": {
+            "timeSpent": 0.38341700000000856,
+            "iterations": 0,
+            "completed": true
+          },
+          "optimizeSection": {
+            "timeSpent": 0.028333000000003494,
+            "iterations": 0,
+            "completed": true
+          }
+        }
+      },
+      "resultSummary": {
+        "solved": true,
+        "failed": false,
+        "error": null,
+        "iterations": 29,
+        "timeToSolve": null,
+        "pipelineIterations": 1545,
+        "nextPipelinePhase": "uniformPortDistributionSolver",
+        "regionCount": 177,
+        "portCount": 1693,
+        "connectionCount": 2,
+        "outputNodeCount": 15,
+        "inputNodeCount": 177
+      }
+    },
+    {
+      "sampleName": "sample006",
+      "sourceFile": "circuits/sample006/sample006.circuit.simple-route.json",
+      "outputFile": "dataset-dist/sample006.tiny-hypergraph.json",
+      "stats": {
+        "sectionSearchGeneratedCandidateCount": 10,
+        "sectionSearchCandidateCount": 8,
+        "sectionSearchDuplicateCandidateCount": 2,
+        "sectionSearchBaselineMaxRegionCost": 0.2692520775623272,
+        "sectionSearchFinalMaxRegionCost": 0.2692520775623272,
+        "sectionSearchDelta": 0,
+        "selectedSectionCandidateLabel": null,
+        "selectedSectionCandidateFamily": null,
+        "sectionSearchMs": 20.30612500000001,
+        "sectionSearchBaselineEvaluationMs": 1.0734170000000063,
+        "sectionSearchCandidateEligibilityMs": 0.16870799999998098,
+        "sectionSearchCandidateInitMs": 1.3776259999999638,
+        "sectionSearchCandidateSolveMs": 16.14266699999996,
+        "sectionSearchCandidateReplayScoreMs": 0,
+        "sectionMaskPortCount": 0,
+        "activeRouteCount": 0,
+        "initialMaxRegionCost": 0.2692520775623272,
+        "finalMaxRegionCost": 0.2692520775623272,
+        "optimized": false,
+        "currentStage": "none",
+        "stageStats": {
+          "solveGraph": {
+            "timeSpent": 5.807000000000016,
+            "iterations": 0,
+            "completed": true
+          },
+          "optimizeSection": {
+            "timeSpent": 0.045000000000015916,
+            "iterations": 0,
+            "completed": true
+          }
+        }
+      },
+      "resultSummary": {
+        "solved": true,
+        "failed": false,
+        "error": null,
+        "iterations": 344,
+        "timeToSolve": null,
+        "pipelineIterations": 1750,
+        "nextPipelinePhase": "uniformPortDistributionSolver",
+        "regionCount": 169,
+        "portCount": 1661,
+        "connectionCount": 19,
+        "outputNodeCount": 44,
+        "inputNodeCount": 169
+      }
+    },
+    {
+      "sampleName": "sample007",
+      "sourceFile": "circuits/sample007/sample007.circuit.simple-route.json",
+      "outputFile": "dataset-dist/sample007.tiny-hypergraph.json",
+      "stats": {
+        "sectionSearchGeneratedCandidateCount": 10,
+        "sectionSearchCandidateCount": 8,
+        "sectionSearchDuplicateCandidateCount": 1,
+        "sectionSearchBaselineMaxRegionCost": 0.2692520775623272,
+        "sectionSearchFinalMaxRegionCost": 0.2692520775623272,
+        "sectionSearchDelta": 0,
+        "selectedSectionCandidateLabel": null,
+        "selectedSectionCandidateFamily": null,
+        "sectionSearchMs": 20.015125000000012,
+        "sectionSearchBaselineEvaluationMs": 0.20520900000002484,
+        "sectionSearchCandidateEligibilityMs": 0.19008100000007744,
+        "sectionSearchCandidateInitMs": 2.072499000000164,
+        "sectionSearchCandidateSolveMs": 16.674458999999956,
+        "sectionSearchCandidateReplayScoreMs": 0,
+        "sectionMaskPortCount": 0,
+        "activeRouteCount": 0,
+        "initialMaxRegionCost": 0.2692520775623272,
+        "finalMaxRegionCost": 0.2692520775623272,
+        "optimized": false,
+        "currentStage": "none",
+        "stageStats": {
+          "solveGraph": {
+            "timeSpent": 6.108791999999994,
+            "iterations": 0,
+            "completed": true
+          },
+          "optimizeSection": {
+            "timeSpent": 0.0637079999999628,
+            "iterations": 0,
+            "completed": true
+          }
+        }
+      },
+      "resultSummary": {
+        "solved": true,
+        "failed": false,
+        "error": null,
+        "iterations": 605,
+        "timeToSolve": null,
+        "pipelineIterations": 2623,
+        "nextPipelinePhase": "uniformPortDistributionSolver",
+        "regionCount": 237,
+        "portCount": 2628,
+        "connectionCount": 19,
+        "outputNodeCount": 69,
+        "inputNodeCount": 237
+      }
+    },
+    {
+      "sampleName": "sample008",
+      "sourceFile": "circuits/sample008/sample008.circuit.simple-route.json",
+      "outputFile": "dataset-dist/sample008.tiny-hypergraph.json",
+      "stats": {
+        "sectionSearchGeneratedCandidateCount": 10,
+        "sectionSearchCandidateCount": 10,
+        "sectionSearchDuplicateCandidateCount": 0,
+        "sectionSearchBaselineMaxRegionCost": 0.6558704453441305,
+        "sectionSearchFinalMaxRegionCost": 0.6558704453441305,
+        "sectionSearchDelta": 0,
+        "selectedSectionCandidateLabel": null,
+        "selectedSectionCandidateFamily": null,
+        "sectionSearchMs": 308.55312499999997,
+        "sectionSearchBaselineEvaluationMs": 0.22383299999995643,
+        "sectionSearchCandidateEligibilityMs": 0.24687499999976126,
+        "sectionSearchCandidateInitMs": 1.3419149999999718,
+        "sectionSearchCandidateSolveMs": 305.9471680000001,
+        "sectionSearchCandidateReplayScoreMs": 0,
+        "sectionMaskPortCount": 0,
+        "activeRouteCount": 0,
+        "initialMaxRegionCost": 0.6558704453441305,
+        "finalMaxRegionCost": 0.6558704453441305,
+        "optimized": false,
+        "currentStage": "none",
+        "stageStats": {
+          "solveGraph": {
+            "timeSpent": 8.051083000000006,
+            "iterations": 0,
+            "completed": true
+          },
+          "optimizeSection": {
+            "timeSpent": 0.05670799999995779,
+            "iterations": 0,
+            "completed": true
+          }
+        }
+      },
+      "resultSummary": {
+        "solved": true,
+        "failed": false,
+        "error": null,
+        "iterations": 1033,
+        "timeToSolve": null,
+        "pipelineIterations": 3110,
+        "nextPipelinePhase": "uniformPortDistributionSolver",
+        "regionCount": 233,
+        "portCount": 2629,
+        "connectionCount": 19,
+        "outputNodeCount": 68,
+        "inputNodeCount": 233
+      }
+    },
+    {
+      "sampleName": "sample009",
+      "sourceFile": "circuits/sample009/sample009.circuit.simple-route.json",
+      "outputFile": "dataset-dist/sample009.tiny-hypergraph.json",
+      "stats": {
+        "sectionSearchGeneratedCandidateCount": 10,
+        "sectionSearchCandidateCount": 8,
+        "sectionSearchDuplicateCandidateCount": 2,
+        "sectionSearchBaselineMaxRegionCost": 0.3374999999999999,
+        "sectionSearchFinalMaxRegionCost": 0.3374999999999999,
+        "sectionSearchDelta": 0,
+        "selectedSectionCandidateLabel": null,
+        "selectedSectionCandidateFamily": null,
+        "sectionSearchMs": 25.83095800000001,
+        "sectionSearchBaselineEvaluationMs": 0.22575000000006185,
+        "sectionSearchCandidateEligibilityMs": 0.20349999999962165,
+        "sectionSearchCandidateInitMs": 3.7868339999997715,
+        "sectionSearchCandidateSolveMs": 20.82570800000019,
+        "sectionSearchCandidateReplayScoreMs": 0,
+        "sectionMaskPortCount": 0,
+        "activeRouteCount": 0,
+        "initialMaxRegionCost": 0.3374999999999999,
+        "finalMaxRegionCost": 0.3374999999999999,
+        "optimized": false,
+        "currentStage": "none",
+        "stageStats": {
+          "solveGraph": {
+            "timeSpent": 8.889958000000092,
+            "iterations": 0,
+            "completed": true
+          },
+          "optimizeSection": {
+            "timeSpent": 0.05404200000009496,
+            "iterations": 0,
+            "completed": true
+          }
+        }
+      },
+      "resultSummary": {
+        "solved": true,
+        "failed": false,
+        "error": null,
+        "iterations": 900,
+        "timeToSolve": null,
+        "pipelineIterations": 3183,
+        "nextPipelinePhase": "uniformPortDistributionSolver",
+        "regionCount": 257,
+        "portCount": 2934,
+        "connectionCount": 19,
+        "outputNodeCount": 82,
+        "inputNodeCount": 257
+      }
+    },
+    {
+      "sampleName": "sample010",
+      "sourceFile": "circuits/sample010/sample010.circuit.simple-route.json",
+      "outputFile": "dataset-dist/sample010.tiny-hypergraph.json",
+      "stats": {
+        "sectionSearchGeneratedCandidateCount": 10,
+        "sectionSearchCandidateCount": 9,
+        "sectionSearchDuplicateCandidateCount": 0,
+        "sectionSearchBaselineMaxRegionCost": 0.49045260964940324,
+        "sectionSearchFinalMaxRegionCost": 0.3161738617041773,
+        "sectionSearchDelta": 0.17427874794522596,
+        "selectedSectionCandidateLabel": "hot-13-onehop-touch",
+        "selectedSectionCandidateFamily": "onehop-touch",
+        "sectionSearchMs": 124.89904100000001,
+        "sectionSearchBaselineEvaluationMs": 0.22716700000000856,
+        "sectionSearchCandidateEligibilityMs": 0.22162399999990612,
+        "sectionSearchCandidateInitMs": 2.394292000000064,
+        "sectionSearchCandidateSolveMs": 114.45649999999989,
+        "sectionSearchCandidateReplayScoreMs": 6.7778749999999945,
+        "sectionMaskPortCount": 339,
+        "sectionBaselineMaxRegionCost": 0.49045260964940324,
+        "sectionBaselineTotalRegionCost": 0.9002813326845407,
+        "effectiveRipThresholdStart": 0.05,
+        "effectiveRipThresholdEnd": 0.49045260964940324,
+        "effectiveMaxRips": 20,
+        "activeRouteCount": 16,
+        "currentRipThreshold": 0.40786774534014014,
+        "hotRegionCount": 1,
+        "maxRegionCost": 0.49045260964940324,
+        "totalRegionCost": 4.460484970350901,
+        "bestMaxRegionCost": 0.3161738617041773,
+        "bestTotalRegionCost": 4.187724449985506,
+        "ripCount": 13,
+        "reripRegionCount": 2,
+        "initialMaxRegionCost": 0.49045260964940324,
+        "initialTotalRegionCost": 4.078962333001301,
+        "candidateMaxRegionCost": 0.3161738617041773,
+        "candidateTotalRegionCost": 4.187724449985507,
+        "finalMaxRegionCost": 0.3161738617041773,
+        "finalTotalRegionCost": 4.187724449985507,
+        "optimized": true,
+        "currentStage": "none",
+        "stageStats": {
+          "solveGraph": {
+            "timeSpent": 15.793542000000002,
+            "iterations": 0,
+            "completed": true
+          },
+          "optimizeSection": {
+            "timeSpent": 17.83020900000008,
+            "iterations": 0,
+            "completed": true
+          }
+        }
+      },
+      "resultSummary": {
+        "solved": true,
+        "failed": false,
+        "error": null,
+        "iterations": 10137,
+        "timeToSolve": null,
+        "pipelineIterations": 12414,
+        "nextPipelinePhase": "uniformPortDistributionSolver",
+        "regionCount": 268,
+        "portCount": 2796,
+        "connectionCount": 19,
+        "outputNodeCount": 83,
+        "inputNodeCount": 268
+      }
+    }
+  ]
+}
