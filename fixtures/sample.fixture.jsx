@@ -106,6 +106,18 @@ export default function SampleFixture() {
 		writeSampleIdToUrl(sampleId, "pushState");
 	};
 
+	const selectSampleNumber = (sampleNumber) => {
+		if (
+			!Number.isInteger(sampleNumber) ||
+			sampleNumber < 1 ||
+			sampleNumber > samples.length
+		) {
+			return;
+		}
+
+		selectSample(samples[sampleNumber - 1].id);
+	};
+
 	return (
 		<main className="srj12-browser">
 			<style>{`
@@ -160,7 +172,7 @@ export default function SampleFixture() {
 					gap: 8px;
 				}
 
-				.srj12-select-label {
+				.srj12-input-label {
 					display: grid;
 					gap: 4px;
 					color: #59636e;
@@ -170,7 +182,7 @@ export default function SampleFixture() {
 					text-transform: uppercase;
 				}
 
-				.srj12-select,
+				.srj12-input,
 				.srj12-button {
 					height: 38px;
 					border: 1px solid #c7cdd4;
@@ -180,9 +192,10 @@ export default function SampleFixture() {
 					font: inherit;
 				}
 
-				.srj12-select {
-					min-width: 150px;
-					padding: 0 34px 0 11px;
+				.srj12-input {
+					width: 76px;
+					padding: 0 8px;
+					font-variant-numeric: tabular-nums;
 				}
 
 				.srj12-button {
@@ -194,12 +207,12 @@ export default function SampleFixture() {
 				}
 
 				.srj12-button:hover:not(:disabled),
-				.srj12-select:hover {
+				.srj12-input:hover {
 					border-color: #74808c;
 				}
 
 				.srj12-button:focus-visible,
-				.srj12-select:focus-visible {
+				.srj12-input:focus-visible {
 					outline: 3px solid rgba(37, 99, 235, 0.25);
 					outline-offset: 1px;
 				}
@@ -238,11 +251,11 @@ export default function SampleFixture() {
 						width: 100%;
 					}
 
-					.srj12-select-label {
+					.srj12-input-label {
 						flex: 1;
 					}
 
-					.srj12-select {
+					.srj12-input {
 						width: 100%;
 						min-width: 0;
 					}
@@ -271,19 +284,20 @@ export default function SampleFixture() {
 						‹
 					</button>
 
-					<label className="srj12-select-label">
+					<label className="srj12-input-label">
 						Sample
-						<select
-							className="srj12-select"
-							value={selectedSample.id}
-							onChange={(event) => selectSample(event.target.value)}
-						>
-							{samples.map(({ id, data }) => (
-								<option key={id} value={id}>
-									{id} · {data.connections.length} connections
-								</option>
-							))}
-						</select>
+						<input
+							className="srj12-input"
+							type="number"
+							min="1"
+							max={samples.length}
+							step="1"
+							inputMode="numeric"
+							value={selectedIndex + 1}
+							onChange={(event) =>
+								selectSampleNumber(event.target.valueAsNumber)
+							}
+						/>
 					</label>
 
 					<button
