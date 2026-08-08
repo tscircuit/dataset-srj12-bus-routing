@@ -1,7 +1,7 @@
 {
   "name": "@tsci/tscircuit.dataset-srj12-bus-routing",
   "version": "1.0.0",
-  "description": "A tscircuit component package",
+  "description": "Ten synthetic bus-routing Simple Route JSON problems",
   "main": "index.js",
   "types": "index.d.ts",
   "files": [
@@ -19,10 +19,13 @@
   ],
   "scripts": {
     "build": "tsci build circuits/sample001/sample001.circuit.tsx",
+    "build:site": "cosmos-export",
     "build:all": "tsci build circuits/sample001/sample001.circuit.tsx && tsci build circuits/sample002/sample002.circuit.tsx && tsci build circuits/sample003/sample003.circuit.tsx && tsci build circuits/sample004/sample004.circuit.tsx && tsci build circuits/sample005/sample005.circuit.tsx && tsci build circuits/sample006/sample006.circuit.tsx && tsci build circuits/sample007/sample007.circuit.tsx && tsci build circuits/sample008/sample008.circuit.tsx && tsci build circuits/sample009/sample009.circuit.tsx && tsci build circuits/sample010/sample010.circuit.tsx",
     "snapshot": "tsci snapshot circuits/sample001/sample001.circuit.tsx",
     "snapshot:update": "tsci snapshot circuits/sample001/sample001.circuit.tsx --update",
     "build:dataset-dist": "bun scripts/build-dataset-dist.mjs",
+    "cosmos": "cosmos",
+    "generate:readme-image": "bun scripts/generate-readme-image.mjs",
     "start": "tsci dev",
     "typecheck": "tsc --noEmit",
     "dev": "tsci dev"
@@ -30,8 +33,14 @@
   "devDependencies": {
     "@tscircuit/capacity-autorouter": "^0.0.484",
     "@types/react": "^19.2.14",
+    "graphics-debug": "^0.0.95",
+    "react": "^19.2.4",
+    "react-cosmos": "^7.3.0",
+    "react-cosmos-plugin-vite": "^7.3.0",
+    "react-dom": "^19.2.4",
     "tscircuit": "^0.0.1672",
-    "typescript": "^5.0.0"
+    "typescript": "^5.0.0",
+    "vite": "^8.1.5"
   },
   "author": "imrishabh18"
 }
