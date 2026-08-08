@@ -24,4 +24,6 @@ bun run build:site
 ```
 
 The static Cosmos catalog is exported to `cosmos-export/`, which is the Vercel
-output directory configured by `vercel.json`.
+output directory configured by `vercel.json`. The browser can switch among all
+ten samples and stores the active sample in the `sample` URL parameter, so a
+specific view can be shared or bookmarked.
